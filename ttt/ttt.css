@@ -1,0 +1,68 @@
+body{
+    height: 680px;
+    background: linear-gradient(180deg, #fc5439, #ffba5f);
+    background-attachment: fixed;
+}
+h1{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #504d48;
+    text-align: center;
+    font-size: 90px; 
+}
+#gameboard {
+    background-color: #ffba5f;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid #504d48;
+    font-size: 50px;
+    text-align: center;
+}
+.rectangle {
+    width: 198px;
+    height: 190px;
+    border: 1px solid #504d48;
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.rectangle:hover {
+    background-color: #ff9f22;
+}
+.rectangle.x:before {
+    content: "X";
+}
+.rectangle.o:before {
+    content: "0";
+}
+    .X {
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: #fc5439;
+}
+    .O {
+    font-family: "Lucida Console", "Courier New", monospace;    
+    color: #ffe0b8;
+}
+#message {
+    font-weight: 700;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: #504d48;
+    font-family: "Lucida Console", "Courier New", monospace;      
+
+}
+#newgame{
+    font-family: "Lucida Console", "Courier New", monospace;    
+    background-color: #e0d3c2;
+    display: block; 
+    margin: 0 auto; 
+    font-size: 40px;
+    color: #504d48;
+    border: 2px solid #504d48
+}
